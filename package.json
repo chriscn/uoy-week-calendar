@@ -2,9 +2,9 @@
   "name": "uoy-week-calendar",
   "version": "0.1.0",
   "description": "",
-  "main": "src/server.ts",
+  "main": "src/generate.ts",
   "scripts": {
-    "build": "tsc",
+    "generate": "ts-node src/generate.ts",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "dev": "nodemon src/server.ts"
