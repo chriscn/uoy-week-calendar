@@ -2,10 +2,7 @@ import type { Config } from 'jest';
 
 const config: Config = {
     preset: 'ts-jest',
-    testEnvironment: 'node',
-    setupFiles: [
-        'dotenv/config'
-    ]
+    testEnvironment: 'node'
 };
 
 export default config;
