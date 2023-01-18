@@ -1,6 +1,6 @@
 import {NextFunction, Request, Response} from "express";
 import {ICalCalendar} from "ical-generator";
-import {CalendarType, getCurrentAcademicYear, getNextPeriod} from "../period";
+import {CalendarType, getCurrentAcademicYear, getNextPeriod} from "./period";
 import hash from 'hash.js';
 import dayjs from "dayjs";
 
