@@ -36,10 +36,20 @@
                 <li><b>m</b>: Marking - free from teaching</li>
                 <li><b>o</b>: Research, admin duties, PGR/PGT supervision, summer resits, teaching prep, student recruitment activities, vacation</li>
             </ul>
-            <p>All this data can be found in this <a href="https://docs.google.com/spreadsheets/d/1eJh5MMKvYYo0bjGf5IekGv-TGZrouPLa7y55KBcvCPI/edit?usp=sharing" target="_blank">spreadsheet</a>.</p>
+            <h2>Application Programming Interface (API)</h2>
+            <p>In lieu of a dynamic API, there exists a file called <code>dates.json</code>. This file contains a list of dates that are Mondays, and the corresponding week number in a dictionary. One can then use this file locally.</p>
+            <p id="date">Hi</p>
             <h2>Source Code</h2>
-            <p>The source code behind this project was originally developed by Christopher Nethercott, and is available on <a href="https://github.com/chriscn/uoy-week-calendar">GitHub</a>.</p>
+            <p class="mb-0">The source code behind this project was originally developed by Christopher Nethercott, and is available on <a href="https://github.com/chriscn/uoy-week-calendar">GitHub</a>.</p>
+            <p>All this data can be found in this <a href="https://docs.google.com/spreadsheets/d/1eJh5MMKvYYo0bjGf5IekGv-TGZrouPLa7y55KBcvCPI/edit?usp=sharing" target="_blank">spreadsheet</a>.</p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script>
+            fetch('dates.json')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('date').innerText = JSON.stringify(data);
+                })
+        </script>
     </body>
 </html>
