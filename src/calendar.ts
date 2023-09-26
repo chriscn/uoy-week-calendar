@@ -369,7 +369,12 @@ export const academicYears: AcademicYear[] = [
     }
 ];
 
-export function getWeeksBetween(startDate: Date, endDate: Date): number {
+export function getWeeksBetween(rawStartDate: Date, endDate: Date): number {
+    // startDate and endDate might not be in the same timezone (in particular around the BST transition)
+    let startDate = rawStartDate;
+    if (startDate.getTimezoneOffset() != endDate.getTimezoneOffset()) {
+        startDate = dayjs(startDate).add(startDate.getTimezoneOffset() - endDate.getTimezoneOffset(), 'minute').toDate();
+    }
     return Math.abs(dayjs(endDate).diff(dayjs(startDate), 'weeks'));
 }
 
