@@ -134,3 +134,6 @@ dist
 
 # Calendar Files
 *.ics
+
+# Built files
+dist/

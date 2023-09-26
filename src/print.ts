@@ -17,7 +17,7 @@ for (let academicYear of academicYears) {
         for (let i = 0; i <= weeks; i++) {
             let currentDate = dayjs(startDate).add(i, 'week').toDate();
 
-            console.log(`${currentDate.toISOString()}: ${currentPeriod.getWeekName(currentDate)} - ${currentPeriod.getWeekDescription(currentDate, calendarType)}`)
+            console.log(`${currentDate.toISOString()}: ${currentPeriod.getWeekName(currentDate, calendarType)}`)
         }
     }
 }

@@ -2,13 +2,15 @@
   "name": "uoy-week-calendar",
   "version": "0.1.0",
   "description": "",
-  "main": "src/generate.ts",
+  "main": "dist/generate.js",
   "scripts": {
     "generate": "ts-node src/generate.ts",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "dev": "nodemon src/server.ts",
-    "dev:print": "nodemon src/print.ts"
+    "dev:print": "nodemon src/print.ts",
+    "build": "tsc",
+    "prepack": "tsc"
   },
   "repository": {
     "type": "git",
