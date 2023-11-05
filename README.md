@@ -34,6 +34,8 @@ The types are dependent on which calendar you subscribe to: undergraduate, postg
 
 The `offset` value, is the  Week Number that begins after Easter. For 2023/24 this is 8. It will be one more than the teaching week due to either the 3rd Marking Week or Refreshers Week.
 
+The site has moved from [https://calendar.chrisnethercott.co.uk](https://calendar.chrisnethercott.co.uk) to [https://chriscn.github.io/uoy-week-calendar](https://chriscn.github.io/uoy-week-calendar).
+
 ## License
 
 MIT Licensed
