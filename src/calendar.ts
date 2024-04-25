@@ -167,7 +167,7 @@ export class Semester2B implements Period {
 
         if (calendarType == CalendarType.UNDERGRADUATE || calendarType == CalendarType.POSTGRADUATE) {
             if (week <= 12) {
-                name = `S2/${week - 3} (Teaching Week ${week - 3})`;
+                name = `S2/${week - 1} (Teaching Week ${week - 1})`;
             } else if (week == 13) {
                 name = `S2/${week - 1} (Revision Week)`
             } else {
