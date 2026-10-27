@@ -324,11 +324,11 @@ export const academicYears: AcademicYear[] = [
             // 2026/27
             new Semester1A(new Date(Date.UTC(2026, 8, 21))),
             new Holiday(new Date(2026, 11, 21), "Christmas"),
-            new Semester1B(new Date(Date.UTC(2027, 0, 11))),
-            new Semester2A(new Date(Date.UTC(2027,1,8))),
+            new Semester1B(new Date(Date.UTC(2027, 0, 4))),
+            new Semester2A(new Date(Date.UTC(2027,1,1))),
             new Holiday(new Date(Date.UTC(2027, 2, 22)), "Easter"),
-            new Semester2B(new Date(Date.UTC(2027, 3, 12)), 7),
-            new SemesterSummerVacation(new Date(Date.UTC(2027, 5, 14))),
+            new Semester2B(new Date(Date.UTC(2027, 3, 5)), 7),
+            new SemesterSummerVacation(new Date(Date.UTC(2027, 5, 7))),
         ]
     },
     {
